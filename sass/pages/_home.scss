@@ -117,6 +117,11 @@ html{
         height: 4rem;
         border-radius: 50%;
         background-color: rgba(128, 128, 128, 0.356);
+        &:hover{
+          color: var(--orang);
+          transform: translateY(-0.2rem);
+          
+        }
       }
     }
   }
@@ -129,7 +134,7 @@ html{
     justify-content: end;
     padding: 25rem 0 0 0;
     align-items: center;
-    
+    gap: 2rem;
    
     .home_play{
       width: 5rem;
@@ -141,13 +146,18 @@ html{
       margin: 3rem;
       font-size: 3.5rem;
       color: var(--orang);
+      box-shadow:inset 0 0 0.5rem rgba(128, 128, 128, 0.705);
     }
     .home_pagination{
       display: flex;
       align-items: flex-end;
       gap: 2rem;
+      div:hover{
+        color: var(--orang);
+      }
       .two{
         font-size: 4rem;
+        color: var(--orang);
       }
     }
   }
