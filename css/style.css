@@ -4,7 +4,8 @@ html {
 
 :root {
   --orang:#F52D1A;
-  --back: #030303; }
+  --back: #030303;
+  --all:rgba(128, 128, 128, 0.541); }
 
 * {
   margin: 0;
@@ -53,47 +54,42 @@ html {
 .basic_section {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 4rem;
   align-items: flex-end;
   height: 80%;
   font-size: 2rem; }
-  .basic_section .basic_title {
-    padding: 2rem; }
-    .basic_section .basic_title .home_asoschi {
-      margin-left: 1rem; }
-    .basic_section .basic_title .home_title {
-      font-size: 6rem;
-      margin-left: 1rem; }
-    .basic_section .basic_title .home_btn {
+  .basic_section .basic_title .home_title {
+    font-size: 6rem; }
+  .basic_section .basic_title .home_btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0; }
+    .basic_section .basic_title .home_btn div {
+      margin: 1rem 0;
+      width: 12rem;
+      height: 4rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
       display: flex;
-      justify-content: space-between;
-      margin: 2rem 0; }
-      .basic_section .basic_title .home_btn div {
-        margin: 1rem;
-        width: 12rem;
-        height: 4rem;
-        font-size: 1.5rem;
-        border-radius: 0.5rem;
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-      .basic_section .basic_title .home_btn .home_btn_one {
-        background-color: var(--orang);
-        color: white; }
-    .basic_section .basic_title .home_social {
+      justify-content: center;
+      align-items: center; }
+    .basic_section .basic_title .home_btn .home_btn_one {
+      background-color: var(--orang);
+      color: white; }
+  .basic_section .basic_title .home_social {
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    padding: 1rem; }
+    .basic_section .basic_title .home_social .home_soc {
       display: flex;
-      justify-content: start;
-      gap: 1rem;
-      padding: 1rem; }
-      .basic_section .basic_title .home_social .home_soc {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%;
-        background-color: rgba(128, 128, 128, 0.356); }
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: rgba(128, 128, 128, 0.356); }
   .basic_section .basic_right {
     padding: 2rem;
     width: 50%;
@@ -113,3 +109,35 @@ html {
       margin: 3rem;
       font-size: 3.5rem;
       color: var(--orang); }
+
+.about {
+  width: 100%;
+  height: 110vh;
+  border: 2px solid rebeccapurple;
+  padding: 4rem; }
+  .about .about_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 1px solid red;
+    font-size: 1.8rem;
+    margin: 1rem 0; }
+    .about .about_header .about_search {
+      border: 1px solid var(--all);
+      padding: 0.5rem;
+      width: 25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .about .about_header .about_search input {
+        outline: none;
+        border: none; }
+      .about .about_header .about_search i {
+        color: var(--all); }
+  .about .about_items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--all); }
