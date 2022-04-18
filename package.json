@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel watch:sass devserver"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/samandarqodirqulov/kino-web-site#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.4.1",
+    "node-sass": "^7.0.1",
     "parcel": "^2.4.1"
   },
   "dependencies": {
