@@ -2,12 +2,13 @@ html{
   font-size: 62.5%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600&display=swap');
 
 :root{
   --orang:#F52D1A;
   --back: #030303;
   --all:rgba(128, 128, 128, 0.541);
+  --text: rgb(223, 195, 195);
 }
 
 * {
@@ -61,6 +62,7 @@ html{
       color: white;
       padding: 0.5rem 1.5rem;
       border-radius: 0.5rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -120,17 +122,16 @@ html{
   }
 
   .basic_right{
-    padding: 2rem;
-    
     width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content:end;
-    padding-left: 40rem;
+    // flex-direction: column;
+    justify-content: end;
+    padding: 25rem 0 0 0;
+    align-items: center;
+    
    
     .home_play{
-      padding: 2rem;
       width: 5rem;
       height: 5rem;
       border-radius: 50%;
@@ -141,25 +142,38 @@ html{
       font-size: 3.5rem;
       color: var(--orang);
     }
+    .home_pagination{
+      display: flex;
+      align-items: flex-end;
+      gap: 2rem;
+      .two{
+        font-size: 4rem;
+      }
+    }
   }
 }
 
 .about{
   width: 100%;
-  height: 110vh;
-  border: 2px solid rebeccapurple;
   padding: 4rem;
+  background-color: var(--back);
+  color: var(--text);
   .about_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--orang);
     font-size: 1.8rem;
     margin: 1rem 0;
+    padding: 1rem 0;
+    .about_title{
+      font-size: 2.2rem;
+    }
     .about_search{
       border: 1px solid var(--all);
       padding: 0.5rem;
+      border-radius: 3px;
       width: 25rem;
       display: flex;
       justify-content: space-between;
@@ -167,6 +181,10 @@ html{
       input{
         outline: none;
         border: none;
+        background-color: var(--back);
+        &::placeholder{
+          font-size: 1.5rem;
+        }
       }
       i{
         color: var(--all);
@@ -179,6 +197,55 @@ html{
     justify-content: start;
     align-items: center;
     gap: 1rem;
-    background-color: var(--all);
+    padding: 0;
+    margin: 1rem 0;
+
+    .about_item{
+      background-color: var(--all);
+      width: 10rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      border-radius: 0.2rem;
+      margin: 2rem 0;
+    }
+
+  }
+    .about_cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin: 1rem 0;
+      .about_card{
+  
+        height: 40rem;
+        img{
+          
+          width: 100%;
+          height: 80%;
+        }
+        .about_card_title{  
+          font-size: 2rem;
+          font-weight: 500;
+          margin: 0.5rem;
+        }
+        .about_card_description {
+          font-size: 1.5rem;
+          margin: 0.5rem; 
+          color: var(--all);
+        }
+      }
+    }
+
+  .more_btn{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    color: var(--orang);
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+
   }
 }
