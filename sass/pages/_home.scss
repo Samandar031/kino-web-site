@@ -1,0 +1,149 @@
+html{
+  font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+:root{
+  --orang:#F52D1A;
+  --back: #030303;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Akshar', sans-serif;
+}
+
+.containerP{
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.header_navbar{
+  width: 100%;
+  height: 5rem;
+  box-shadow: 0 0 0.3rem gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  font-size: 2rem;
+  align-items: center;
+  .nav_items{
+    display: flex;
+    justify-content: space-around;
+    color: var(--back);
+    text-align: center;
+    gap: 3rem;
+    margin: 0;
+    i{
+      font-size: 1.8rem;
+    }
+
+    .nav_item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav_item_sign{
+      background-color: var(--orang);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.basic_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: flex-end;
+  height: 80%;
+  font-size: 2rem;
+
+  .basic_title {
+    padding: 2rem;
+    .home_asoschi{
+      margin-left: 1rem;
+    }
+
+    .home_title {
+      font-size: 6rem;
+      margin-left: 1rem;
+    }
+
+    .home_btn {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+      div{
+
+        margin: 1rem;
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .home_btn_one{
+        background-color: var(--orang);
+        color: white;
+      }
+    }
+
+    .home_social{
+      display: flex;
+      justify-content:start;
+      gap: 1rem;
+      padding: 1rem;
+      .home_soc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: rgba(128, 128, 128, 0.356);
+      }
+    }
+  }
+
+  .basic_right{
+    padding: 2rem;
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    padding-left: 40rem;
+   
+    .home_play{
+      padding: 2rem;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem;
+      font-size: 3.5rem;
+      color: var(--orang);
+    }
+  }
+}
