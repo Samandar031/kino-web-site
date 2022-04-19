@@ -231,13 +231,14 @@ html{
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       gap: 3rem;
       margin: 1rem 0;
+      background-size: cover;
       .about_card{
-  
         height: 40rem;
         img{
-          
-          width: 4rem;
-          height: 5rem;
+          width: 20rem;
+          height: 28rem;
+         
+          background-size: cover;
         }
         .about_card_title{  
           font-size: 2rem;
