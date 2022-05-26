@@ -35,7 +35,7 @@ html{
 .header_navbar{
   width: 100%;
   height: 5rem;
-  box-shadow: 0 0 0.3rem gray;
+  box-shadow: 0 0 0.3rem var(--orang);
   display: flex;
   justify-content: space-between;
   padding: 0 3rem;
@@ -50,7 +50,7 @@ html{
     gap: 3rem;
     margin: 0;
     i{
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     .nav_item{
